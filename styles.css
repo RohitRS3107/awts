@@ -94,6 +94,7 @@ nav {
         justify-content: center;
     }
 }
+
 .titlepage {
     display: flex;
     list-style: none;
@@ -105,6 +106,7 @@ nav {
 .titlepage li {
     margin: 30 20px;
 }
+
 .titlepage #titleofsite {
     margin-left: 48px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -119,6 +121,7 @@ nav {
 
     line-height: 100%;
 }
+
 .titlepage img {
     width: 48ch;
     height:100vh;
