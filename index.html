@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beyond The Universe</title>
+    <script src="scripts.js"></script>
 </head>
 <body><header>
     <nav>
-        <ul class="logo">
-            <li>Beyond The</li>
-            <li>Universe</li>
-        </ul>
+        <div class="logo">
+            Beyond The
+            Universe
+        </div>
+        
+        <div class="menu-icon" onclick="toggleMenu()">&#9776</div>
+
         <ul class="nav-links">
             
             <li><a href="blog.html">Read</a></li>
@@ -30,20 +34,24 @@
 
 
 
-<ul class="titlepage">
-    <li> <img src="img/homepageimg.png" id="homepageimg"></img></li>
-    <li id="titleofsite"> Ancient
-         Worlds,
-        Timeless
-    Stories
-        <div id="subtitleofsite">
-            Navigating ancient worlds, choices unfold paths to the extraordinary, demanding creativity, curiosity, and courage for a truly fulfilling journey.
-        </div>           
-        </div>
-        <div id="readbutton"> <button>Start Reading</button></div>
-    </li>
-</ul>
-</div>
+<div class="container">
+    <!-- Image Column -->
+    <div class="column image-column">
+      <figure class="image-wrapper">
+        <img src="https://rohitrs3107.wordpress.com/wp-content/uploads/2024/07/shutterstock_1030695895_lfjbb2.webp" alt="Ancient Worlds" />
+      </figure>
+    </div>
+  
+    <!-- Text Column -->
+    <div class="column text-column">
+      <h2>Ancient Worlds, Timeless Stories</h2>
+      <p>Navigating ancient worlds, choices unfold paths to the extraordinary, demanding creativity, curiosity, and courage for a truly fulfilling journey.</p>
+      <div class="button-wrapper">
+        <a class="button" href="https://rohitrs3107.wordpress.com/blog/">Start Reading</a>
+      </div>
+    </div>
+  </div>
+  
 <footer><div id="btu"><h5>Beyond The Universe</h5>btu3107@gmail.com</div></footer>
 </body>
 </html>
