@@ -26,6 +26,8 @@ nav {
     display: flex;
     list-style: none;
     margin: 0  20px;
+    font-weight: 500;
+    font-size: large;
    
     
 }
@@ -39,7 +41,7 @@ nav {
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 5px;
 }
 
 .nav-links a {
@@ -55,7 +57,7 @@ nav {
 }
 
 .social-icons a {
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 .social-icons img {
@@ -80,21 +82,21 @@ nav {
     display: flex;
     align-items: center; /* Vertically centers content */
     justify-content: space-between; /* Spaces the columns evenly */
-    gap: 1rem; /* Adds space between the columns */
+    gap: 1.8rem; /* Adds space between the columns */
     max-width: 1200px; /* Controls the maximum width */
     margin: 0 auto; /* Centers the container horizontally */
-    padding: 2rem; /* Adds padding around the content */
+    padding: 1rem; /* Adds padding around the content */
   }
 
   /* Container holding the columns */
 .container {
     display: flex;
     align-items: center; /* Vertically centers content */
-    justify-content: space-between; /* Spaces the columns evenly */
-    gap: 1rem; /* Adds space between the columns */
+    justify-content: space-evenly; /* Spaces the columns evenly */
+    gap: 2rem; /* Adds space between the columns */
     max-width: 1200px; /* Controls the maximum width */
     margin: 0 auto; /* Centers the container horizontally */
-    padding: 2rem; /* Adds padding around the content */
+    padding: 0rem; /* Adds padding around the content */
   }
   
   /* Styling the columns */
@@ -108,12 +110,12 @@ nav {
     width: 100%; /* Ensures image takes full width of the column */
     aspect-ratio: 3/4; /* Maintains the 3:4 aspect ratio */
     object-fit: cover; /* Ensures image covers the area without distortion */
-    border-radius: 8px; /* Adds rounded corners */
+    border-radius: 0px; /* Adds rounded corners */
   }
   
   /* Text column specific styling */
   .text-column h2 {
-    font-size: 4.3rem; /* Adjusts the size of the heading */
+    font-size: 4.8rem; /* Adjusts the size of the heading */
     margin-bottom: 1rem; /* Adds space below the heading */
     font-weight: 500;
     line-height: 100%;
@@ -133,15 +135,20 @@ nav {
   
   .button {
     display: inline-block;
-    background-color: black; /* Button background color */
+    background-color: #111111; /* Button background color */
     color: white; /* Button text color */
-    padding: 0.75rem 1.5rem; /* Adds padding to the button */
-    border-radius: 5px; /* Rounds the button corners */
+    padding: 0.8rem 0.84rem; /* Adds padding to the button */
+     /* Rounds the button corners */
     text-decoration: none; /* Removes underline from text */
-    font-size: 1rem; /* Adjusts the font size */
+    font-size: 17px; /* Adjusts the font size */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-display: bold;
     transition: background-color 0.3s ease; /* Smooth transition on hover */
   }
   
+  .menu-icon {
+    display: none;
+  }
   .button:hover {
     background-color: #005bb5; /* Darker shade on hover */
   }
@@ -151,31 +158,45 @@ nav {
     }
   
     .text-column h2 {
-      font-size: 3.3rem;
+      font-size: 3rem;
+      margin-bottom: auto;
+      margin-top: 0px;
+      padding-top: 0px;
     }
   
     .text-column p {
-      font-size: 1rem;
+      font-size: 0.84rem;
+      margin-bottom: auto;
     }
   
     .button {
-      width: 100%; /* Makes the button take full width on small screens */
-      text-align: center;
+      width: 40%; /* Makes the button take full width on small screens */
+      text-align: start;
+      display: inline;
     }
     nav {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       display: flex;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      padding: 0px;
+      margin: 0px;
   }
-
+.image-column {
+  margin-bottom: 0px;
+}
   .logo {
       flex-direction: column;
       align-items: center;
+      font-size: 1rem;
+      margin: auto;
   }
 
   .nav-links {
       flex-direction: column;
       align-items: center;
+      display: none;
   }
 
   .nav-links li {
@@ -197,6 +218,7 @@ nav {
   }
   .menu-icon {
       display: block;
+      visibility: visible;
   }
   .nav-links.active {
       display: flex;
